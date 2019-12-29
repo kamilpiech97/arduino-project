@@ -4,7 +4,7 @@
 #include <ESP8266HTTPClient.h>     // Include the Wi-Fi library
 
 const char* ssid     = "Orange-7EFE";         // The SSID (name) of the Wi-Fi network you want to connect to
-const char* password = "*********";     // The password of the Wi-Fi network
+const char* password = "*******";     // The password of the Wi-Fi network
 
 static const int RXPin = 4, TXPin = 3;
 static const uint32_t GPSBaud = 9600;
@@ -75,9 +75,7 @@ void loop(){
              http.end();  //Close connection
            
            }else{
-           
               Serial.println("Error in WiFi connection");   
-           
            }
            
             delay(15000);  //Send a request every 15 seconds
